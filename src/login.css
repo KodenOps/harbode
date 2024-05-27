@@ -1,0 +1,248 @@
+:root{
+    --button-green: #008148;
+    --primary-orange: #f77f00;
+    --blacks: #333;
+    --greys: #f1f1f1;
+    --dark-blue: #0e131f;
+    --user-link: #555555;
+    --white: #fff;
+    --block: #4A7160;
+}
+
+.login{
+    background-image: url('./img/bgweb.png');
+    background-position: -20px 50px;
+    background-size: cover;
+    /* background-origin: content-box; */
+    background-repeat: no-repeat;
+    /* background-color: red; */
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+    z-index: 0;
+}
+.login .mobile{
+    display: none;
+}
+.login .web{
+    display: flex;
+}
+.login-box{
+    margin-top: 8%;
+    width: 60%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #c4c4c4;
+}
+.login-box:hover .left img{
+    width: 120%;
+    height: 110%;
+    transition: all 5s ease;
+}
+.login-box .left{
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px 0 0 10px;
+}
+.login-box .right{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 60%;
+    padding: 40px 35px;
+    text-align: center;
+}
+.login-box .left img{
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    width: 100%;
+    object-fit: cover;
+    transition: all 5s ease;
+}
+.login-box input{
+    padding: 15px 20px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+    margin-bottom: 20px;
+    outline-color: var(--primary-orange);
+    display: flex;
+    flex-direction: column;
+}
+.login-box button{
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--button-green);
+    box-shadow: inset 1px 1px 5px var(--blacks);
+    color: var(--white);
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.login-box button:hover{
+    background-color: var(--blacks);
+    transition: all 1s ease;
+}
+.login-box .right h4{
+    color: var(--button-green);
+    font-size: 20px;
+    margin: 10px;
+}
+.login-box .right p{
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.forgotcredentials{
+    margin-top: 20px;
+}
+.forgotcredentials a{
+    cursor: pointer;
+    transition: all 1s ease;
+    color: var(--blacks);
+    text-decoration: none;
+}
+.forgotcredentials a:hover{
+    color: var(--primary-orange);
+    transition: all 1s ease;
+}
+.login-box form .flexme{
+    display: flex;
+    align-items: baseline;
+}
+.login-box form .flexme input{
+    width: 80%;
+}
+.login-box form .flexme #firstname{
+    margin-right: 20px;
+    width: 80%;
+}
+@media only screen and (max-width: 1200px){
+    .login-box .right{
+        padding: 50px 20px;
+    }
+    .login-box{
+        margin-top: 15%;
+    }
+}
+@media only screen and (max-width: 1030px){
+    .login-box{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+@media only screen and (max-width: 800px){
+    .login-box{
+        margin-top: 20%;
+    }
+    .login-box .right{
+        padding: 70px 20px;
+    }
+}
+@media only screen and (max-width: 650px){
+   
+    .login-box .left{
+        display: none;
+    }
+    .login-box{
+        margin-top: 0%;
+        height: 100vh;
+        width: 100vw;
+        margin-left: 0;
+        color: var(--white);
+        /* background-color: transparent; */
+        background-image: url('./img/phonebg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0;
+        overflow: hidden;
+        object-fit: cover;
+    }
+    
+    .login-box .right{
+        padding: 10px 20px;
+        justify-content: flex-start;
+        margin-top: 270px;
+        height: 100%;
+        height: 100vh;
+        overflow: hidden;
+        width: 95%;
+    }
+    .forgotcredentials a{
+        color: var(--white);
+    }
+    .login-box{
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .login-box input{
+        margin-bottom: 30px;
+        outline-color: var(--primary-orange);
+        display: flex;
+        flex-direction: column;
+    }
+    .login .web{
+        display: none;
+    }
+    .login .mobile{
+        display: flex;
+        background-color: transparent;
+    }
+    .login .mobile img{
+        width: 50%;
+    }
+    .login .mobile #i{
+        color: var(--white);
+    }
+    .login-box .right h4{
+        font-size: 24px;
+        color: var(--white);
+        margin-bottom: 25px;
+    }
+    .login-box .right p{
+        font-size: 18px;
+        color: #c4c4c4;
+        font-weight: 400;
+        width: 80%;
+        margin-left: 10%;
+        
+        margin-bottom: 25px;
+    }
+    .login .login-box input{
+        padding: 20px ;
+        /* margin-top: 35px; */
+    }
+    .forgotcredentials{
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width: 300px){
+    .login-box .right{
+        margin-top: 180px;
+        
+    }
+    
+    .login-box .right h4{
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .login-box .right p{
+        width: 100%;
+        margin-left: 0%;
+        
+        margin-bottom: 25px;
+    }
+    .login .login-box input{
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+}

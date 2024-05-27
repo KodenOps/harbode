@@ -1,0 +1,414 @@
+:root{
+    --button-green: #008148;
+    --primary-orange: #f77f00;
+    --blacks: #333;
+    --greys: #f1f1f1;
+    --dark-blue: #0e131f;
+    --user-link: #555555;
+    --white: #fff;
+    --block: #4A7160;
+}
+
+.contact{
+    min-height: 100vh;
+    background-image: url('./img/bgweb.png');
+    background-position: -20px 50px;
+    background-size: cover;
+    /* background-origin: content-box; */
+    background-repeat: no-repeat;
+    /* background-color: red; */
+    overflow: hidden;
+    z-index: 0;
+}
+.contact .contactflex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact .contactflex .right{
+    flex: 3;
+}
+.contact .contactflex .left{
+    flex: 2;
+    padding-top: 10%;
+    padding-left: 5%;
+}
+.contact .contactflex h2{
+    font-size: 45px;
+    color: var(--button-green);
+}
+.contact .contactflex p{
+    font-size: 25px;
+    line-height: 45px;
+    width: 95%;
+    font-family: 'open sans';
+    font-weight: 400;
+    margin-top: 24px;
+    letter-spacing: 2px;
+}
+.contact .contactflex .right img{
+    width: 100%;
+    margin-top: 10%;
+    object-fit: contain;
+}
+@media only screen and (max-width: 1300px){
+    .contact .contactflex .right img{
+        width: 130%;
+        margin-left: -20%;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .contact .contactflex .right img{
+        width: 150%;
+        margin-left: -30%;
+    }
+    .contact .contactflex .left{
+        padding-top: 20%;
+    }
+}
+@media only screen and (max-width: 1100px){
+    .contact .contactflex .right img{
+        width: 170%;
+        margin-left: -40%;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .contact{
+        width: 100%;
+    background-position: -900px -500px;
+    }
+    .contact .contactflex{
+        flex-direction: column;
+    }
+    .contact .contactflex .left{
+        flex: 1;
+    }
+    .contact .contactflex .right{
+        flex: 1;
+    }
+    .contact .contactflex .right img{
+        width: 100%;
+        margin-left: 0%;
+
+    }
+    .contact .contactflex .left h2{
+        font-size: 50px;
+    }
+    .contact .contactflex .left p{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 730px){
+    .contact .contactflex .right img{
+        width: 120%;
+        margin-left: -10%;
+
+    }
+}
+@media only screen and (max-width: 600px){
+    .contact .contactflex .right img{
+        width: 140%;
+        margin-left: -20%;
+
+    }
+}
+@media only screen and (max-width: 500px){
+    .contact .contactflex .right img{
+        width: 150%;
+        margin-left: -25%;
+
+    }
+    .contact .contactflex .left p{
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 420px){
+    .contact .contactflex .right img{
+        width: 150%;
+        margin-left: -25%;
+
+    }
+    .contact .contactflex .left p{
+        font-size: 20px;
+    }
+    .contact .contactflex .left h2{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+}
+.enjoylabel{
+    box-shadow: 0px 0px 5px #c4c4c4;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin-left: 20%;
+    align-items: center;
+    padding: 40px 0;
+}
+@media only screen and (max-width: 800px){
+    .flex{
+        width: 100%;
+        margin-left: 0%;
+    }
+}
+
+.enjoylabel .one, .enjoylabel .two, .enjoylabel .three{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.enjoylabel i{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    color: var(--white);
+    background-color: var(--button-green);
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+.enjoylabel h4{
+    width: 70%;
+    text-align: center;
+    margin-top: 20px;
+}
+.enjoylabel h3{
+    font-size: 24px;
+    color: var(--button-green);
+    text-align: center;
+    padding-top: 20px;
+}
+@media only screen and (max-width: 450px){
+    .enjoylabel h4{
+        font-size: 12px;
+        width: 85%;
+        margin-top: 10px;
+    }
+}
+
+.contactform{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0;
+}
+.contactform .right img{
+    width: 70%;
+}
+.contactform .left{
+    width: 50%;
+    flex: 1;
+    margin-left: 7%;
+}
+.contactform .right{
+    flex: 1;
+}
+.contactform form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0;
+}
+.contactform input{
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 80%;
+    outline-color: var(--primary-orange);
+}
+textarea{
+    width: 80%;
+    resize: none;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 15px;
+    border: 2px solid var(--blacks);
+    outline-color: var(--primary-orange);
+}
+.contactform .left .p{
+    width: 80%;
+    line-height: 30px;
+}
+.contactform .left h4{
+    font-size: 24px;
+    color: var(--button-green);
+    margin-bottom: 10px;
+}
+.contactform form p{
+    padding: 15px 25px;
+    border: 1px solid var(--dark-blue);
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    width: 80%;
+    cursor: pointer;
+}
+.contactform form p i{
+    transition: all 1s ease;
+}
+.contactform form p:hover i{
+    color: var(--button-green);
+    transition: all 1s ease;
+    font-size: larger;
+}
+.contactform button{
+    padding: 20px 25px;
+    width: 80%;
+    border-radius: 10px;
+    background-color: var(--button-green);
+    color: var(--white);
+    border: none;   
+    box-shadow: inset 1px 1px 3px var(--blacks);
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.contactform button:hover{
+    background-color: var(--blacks);
+    transition: all 1s ease;
+}
+@media only screen and (max-width: 900px){
+    .contactform .right img{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .contactform .left .p{
+        width: 100%;
+    }
+    .contactform{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 70px 0;
+    }
+    .contactform .left{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .contactform .right{
+        width: 70%;
+    }
+    .contactform form input, textarea, .contactform form p{
+        width: 95%;
+    }
+
+}
+/* Location */
+.location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.location .left{
+    width: 40%;
+    padding-left: 7%;
+}
+.locations h3{
+    font-size: 28px;
+    color: var(--button-green);
+    padding: 20px 0;
+    margin-left: 7%;
+}
+.location .right{
+    width: 60%;
+}
+.location .right p{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.location .right p i{
+    margin-right: 20px;
+}
+.location .right p span{
+    margin-left: 10px;
+}
+.location .left img{
+    width: 80%;
+}
+.hide{
+    display: none;
+    transition: all 2s ease;
+}
+.show{
+    display: block;
+    transition: all 2s ease;
+}
+#success-msg i{
+    font-size: 24px;
+}
+#success-msg{
+    margin-top: 30px;
+    background-color: var(--button-green);
+    color: var(--white);
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media only screen and (max-width: 840px){
+    .location{
+        flex-direction: column;
+    }
+    .contactform button{
+        width: 95%;
+    }
+    .location .left, .location .right{
+        padding-left:0%;
+        width: 90%;
+    }
+    .location .right{
+        margin-top: 30px;
+    }
+    .location .left img{
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .location .right p{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 490px){
+    .location .right p{
+        font-size: 14px;
+    }
+    #success-msg{
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 430px){
+    .location .right p span{
+        margin-left: 5px;
+    }
+    .location .right p i{
+        margin-right: 10px;
+    }
+    .location .left img{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 400px){
+    .location .right p{
+        flex-direction: column;
+    }
+    .location .right p i{
+        margin-bottom: 10px;
+        width: 40px;
+        height: 40px;
+        background-color: var(--button-green);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--white);
+    }
+}

@@ -1,0 +1,288 @@
+:root{
+    --button-green: #008148;
+    --primary-orange: #f77f00;
+    --blacks: #333;
+    --greys: #f1f1f1;
+    --dark-blue: #0e131f;
+    --user-link: #555555;
+    --white: rgb(255, 255, 255);
+}
+.hero-content .exploreleft{
+    margin-top: -5%;
+}
+.hero-content-explore{
+    height: 93vh;
+    overflow: hidden;
+}
+.hero-content .exploreimg img{
+    top: 70px;
+    right: 0;
+    width: 55%;
+    height: 100%;
+}
+.hero{
+    background-image: url('./img/bgweb.png');
+    background-position: -20px 50px;
+    background-size: cover;
+    /* background-origin: content-box; */
+    background-repeat: no-repeat;
+    /* background-color: red; */
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+}
+@media only screen and (max-width: 1040px) and (orientation: portrait){
+    .hero{
+        height: 100vh;
+        overflow: hidden;
+        background-position: -400px 50px;
+
+    }
+}
+@media only screen and (max-width: 1040px) and (orientation: landscape){
+    .hero{
+        height: auto;
+        overflow: hidden;
+        background-position: -400px 50px;
+
+    }
+}
+@media only screen and (max-width: 1040px) {
+    .hero-content-explore{
+        flex-direction: column;
+        min-height: 150vh;
+    }
+    .hero-content-explore .left{
+        margin-top: 10%;
+        margin-left: 7%;
+        width: 100%;
+    }
+    .hero-content-explore .right{
+        width: 100%;
+    }
+    .hero-content-explore{
+        height: auto;
+    }
+
+    .hero-content .exploreimg img{
+        margin-top: 20%;
+        margin-left: 5%;
+        width: 100%;
+        height: auto;
+        right: 0;
+        /* object-fit: fill; */
+    }
+}
+@media only screen and (max-width: 930px){
+    .hero-content .exploreimg img{
+        margin-top: 50%;
+        margin-left: -25%;
+    }
+}
+@media only screen and (max-width: 850px){
+    .hero-content .exploreimg img{
+        margin-top: 50%;
+        margin-left: 10%;
+    }
+}
+@media only screen and (max-width: 800px){
+    .hero-content .exploreimg img{
+        margin-top: 25%;
+        margin-left: 10%;
+    }
+}
+@media only screen and (max-width: 770px){
+    .hero-content .exploreimg img{
+        margin-top: 50%;
+        margin-left: 10%;
+    }
+}
+@media only screen and (max-width: 670px){
+    .hero-content .exploreimg img{
+        margin-top: 60%;
+        margin-left: 10%;
+    }
+}
+@media only screen and (max-width: 625px){
+    .hero-content-explore .left{
+        margin-top: 15%;
+    }
+    .hero-content-explore .left h2{
+        width: 90%;
+    }
+    .hero-content .exploreimg img{
+        margin-top: 80%;
+        margin-left: 10%;
+    }
+}
+@media only screen and (max-width: 550px){
+    .hero-content .exploreimg img{
+        margin-top: 80%;
+    }
+}
+@media only screen and (max-width: 512px){
+    .hero-content .exploreimg img{
+        width: 150%;
+        margin-top: 85%;
+        margin-left: 10%;
+    }
+}
+@media only screen and (max-width: 490px){
+    .hero-content .exploreimg img{
+        margin-top: 55%;
+        margin-left: 10%;
+    }
+}
+@media only screen and (max-width: 430px){
+    .hero-content .exploreimg img{
+        margin-top: 60%;
+    }
+}
+@media only screen and (max-width: 370px){
+    .hero-content .exploreimg img{
+        margin-top: 70%;
+    }
+}
+@media only screen and (max-width: 350px){
+    .hero-content .exploreimg img{
+        margin-top: 100%;
+    }
+}
+@media only screen and (max-width: 300px){
+    .hero-content .exploreimg img{
+        margin-top: 100%;
+    }
+}
+.filters select{
+    padding: 15px 25px;
+    width: calc(100%/4 - 5px);
+    border: 1px solid #c4c4c4;
+    outline: none;
+}
+.filters option:checked{
+    background-color: var(--button-green);
+    color: var(--white);
+}
+
+.filters form {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.filters form .top, .filters form .bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+.filters form .bottom{
+    margin-top: 20px;
+}
+.filters form .bottom input{
+    padding:  15px;
+    border: 1px solid #c4c4c4;
+    width: 70%;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+}
+.filters form .bottom input::selection{
+    background-color: var(--button-green);
+    color: var(--white);
+}
+.filters form .bottom button{
+    padding: 10px 15px;
+    border: none;
+    width: 30%;
+    border-radius: 0 5px 5px 0;
+    background-color: var(--button-green);
+    color: var(--white);
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.filters form .bottom button:hover{
+    background-color: var(--blacks);
+    transition: all 1s ease;
+}
+.smallbtn{
+    display: none;
+   
+}
+/* #filter{
+    margin-top: 10px;
+} */
+@media only screen and (max-width: 800px){
+    .filters select{
+        width: calc(100%/2 - 5px);
+        margin-bottom: 10px;
+        
+    }
+    .filters form .bottom{
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .filters form .bottom button{
+        width: 19%;
+    }
+   .smallbtn{
+    display: block;
+}
+.hero-content-explore .exploreleft p{
+    width: 90%;
+}
+.filters form .bottom  .filter{
+    border-radius: 0;
+    margin:0 1%;
+}
+.filters form #hide{
+    display: none;
+    transition: all 1s ease;
+}
+.filters form #show{
+    display: flex;
+    transition: all 1s ease;
+}
+
+.submit{
+    display: none;
+}
+.filters form .bottom input{
+    width: 60%;
+}
+}
+@media only screen and (max-width: 350px){
+    .filters select{
+        width: calc(100%);
+        
+    }
+    .filters form .bottom input{
+        width: 100%;
+    }
+    .filters form .bottom button{
+        width: 100%;
+        margin-top: 10px;
+        padding: 15px 25px;
+    }
+}
+
+.butto{
+    margin: 0 7%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.butto button{
+    padding: 15px 25px;
+    width: 30%;
+    background-color: var(--button-green);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.butto button:hover{
+    background-color: var(--blacks);
+    transition: all 1s ease;
+}
